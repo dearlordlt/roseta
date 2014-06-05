@@ -1,0 +1,11 @@
+<widget id="com.example.hello" version="0.0.1">
+    <name>Roseta Stone Demo</name>
+    <description>
+        Rosetta Stone Inc. (NYSE: RST) is dedicated to changing the way the world learns. The company's innovative, technology-driven language, literacy and brain-fitness solutions are used by thousands of schools, businesses, government organisations and millions of individuals around the world. Founded in 1992, Rosetta Stone pioneered the use of interactive software to accelerate language learning. Today the company offers courses in 24 languages, from the most commonly spoken (such as English, Spanish and Mandarin) to the less prominent (including Irish, Swedish and Tagalog).
+    </description>
+    <author email="sarunas79@gmail.com" href="">
+        Sarunas
+    </author>
+    <content src="index.html" />
+    <access origin="*" />
+</widget>
