@@ -9,3 +9,9 @@ $("#order").click(function() {
         scrollTop: $("#m_order").offset().top
     }, 500);
 });
+
+$("#demo_btn").click(function() {
+    $('html, body').animate({
+        scrollTop: $("#m_order").offset().top
+    }, 500);
+});
