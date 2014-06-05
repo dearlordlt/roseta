@@ -52,6 +52,7 @@ $("#btn_send").click(function () {
         data: { name: "John", location: "Boston" }
     }).done(function( msg ) {
         console.log( "Data Saved: " + msg );
+        $("#demo_btn").hide(0);
         $("#m_home").hide(500);
         $("#m_order").hide(500);
         $("#m_tx").show(500);
