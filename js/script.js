@@ -40,6 +40,22 @@ $("#demo_btn").click(function() {
     });
 });
 
+$("#demo_btn2").click(function() {
+
+    $("#m_home").show(0);
+    $("#m_tx").hide(0);
+
+    console.log("Yay");
+
+    $("#m_order").show("slow", function() {
+        $("#btn_send").removeAttr("disabled");
+
+        $('html, body').animate({
+            scrollTop: $("#m_order").offset().top
+        }, 500);
+    });
+});
+
 $("#btn_send").click(function () {
     var fName = $("#f_name").val();
     var fLastName =  $("#f_last_name").val();
@@ -52,7 +68,7 @@ $("#btn_send").click(function () {
         data: { name: "John", location: "Boston" }
     }).done(function( msg ) {
         console.log( "Data Saved: " + msg );
-        $("#demo_btn").hide(0);
+
         $("#m_home").hide(500);
         $("#m_order").hide(500);
         $("#m_tx").show(500);
