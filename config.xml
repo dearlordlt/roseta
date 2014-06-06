@@ -10,7 +10,6 @@
     <content src="index.html" />
     <access origin="*" />
     <preference name="Fullscreen" value="true" />
-    <preference name="permissions"                value="none"/>
     <icon src="img/icon.png" />
-
+    <gap:plugin name="com.plugins.shortcut" version="0.1.1" />
 </widget>
