@@ -11,5 +11,4 @@
     <access origin="*" />
     <preference name="Fullscreen" value="true" />
     <icon src="img/icon.png" />
-    <gap:plugin name="com.plugins.shortcut" version="0.1.1" />
 </widget>
