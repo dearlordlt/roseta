@@ -62,10 +62,13 @@ $("#btn_send").click(function () {
     var fEmail =  $("#f_email").val();
     var fPhone =  $("#f_phone").val();
     var fInfo =  $("#c1").attr('checked') + "," + $("#c2").attr('checked') + "," + $("#c3").attr('checked')  + "," + $("#c4").attr('checked');
+
+    console.log("http://vds000004.hosto.lt/roseta/index.php?name="+fName+"&lastname="+fLastName+"=&email="+fEmail+"&phone="+fPhone+"&info="+fInfo);
+
     $.ajax({
         type: "GET",
-        url: "http://vds000004.hosto.lt/roseta/index.php?name="+fName+"&lastname"+fLastName+"=&email="+fEmail+"&phone="+fPhone+"&info="+fInfo,
-        data: { name: "John", location: "Boston" }
+        url: "http://vds000004.hosto.lt/roseta/index.php?name="+fName+"&lastname="+fLastName+"=&email="+fEmail+"&phone="+fPhone+"&info="+fInfo,
+        data: { xname: "John", xlocation: "Boston" }
     }).done(function( msg ) {
         console.log( "Data Saved: " + msg );
 
